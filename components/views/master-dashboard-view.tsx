@@ -26,12 +26,12 @@ import type { UserRole } from "@/lib/sample-data"
 import { toast } from "sonner"
 
 const CATEGORY_COLOR: Record<string, string> = {
-  auth: "bg-blue-500",
-  feature: "bg-violet-500",
-  dataset: "bg-amber-500",
-  model: "bg-emerald-500",
-  access: "bg-rose-500",
-  provision: "bg-cyan-500",
+  auth: "bg-blue-600",
+  feature: "bg-violet-600",
+  dataset: "bg-amber-600",
+  model: "bg-sky-600",
+  access: "bg-rose-600",
+  provision: "bg-cyan-600",
 }
 
 function useJitteredCounter(base: number, amplitude: number) {

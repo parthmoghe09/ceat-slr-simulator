@@ -95,7 +95,12 @@ export function WhatIfView({ role }: { role: UserRole }) {
                           max={15}
                           step={1}
                           value={[pct]}
-                          onValueChange={([v]) => setSliderDelta(f.id, v)}
+                          onValueChange={(val: any) => {
+                            const v = Array.isArray(val) ? val[0] : val
+                            if (typeof v === "number" && !isNaN(v)) {
+                              setSliderDelta(f.id, v)
+                            }
+                          }}
                         />
                       </div>
                     )

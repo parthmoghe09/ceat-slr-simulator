@@ -129,12 +129,12 @@ export function SlrPredictionView({ role }: { role: UserRole }) {
           </CardHeader>
           <CardContent>
             <div className="grid gap-6 lg:grid-cols-[220px_1fr]">
-              <div className="flex flex-col items-center justify-center gap-1 rounded-lg border bg-muted/30 p-6">
-                <span className="text-xs uppercase tracking-wide text-muted-foreground">Predicted SLR</span>
-                <span className="font-mono text-4xl font-semibold tabular-nums">
+              <div className="flex flex-col items-center justify-center gap-1 rounded-lg border border-border bg-muted/20 p-6 shadow-inner">
+                <span className="text-xs uppercase tracking-wider text-muted-foreground font-semibold">Predicted SLR</span>
+                <span className="font-mono text-4xl font-bold tabular-nums text-accent">
                   {prediction.predictedSLR !== null ? prediction.predictedSLR.toFixed(2) : "—"}
                 </span>
-                <span className="text-xs text-muted-foreground">millimeters</span>
+                <span className="text-xs font-medium text-muted-foreground">millimeters</span>
               </div>
               <div>
                 {prediction.predictedSLR !== null ? (

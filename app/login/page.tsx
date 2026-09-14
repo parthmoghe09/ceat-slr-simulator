@@ -49,14 +49,14 @@ export default function LoginPage() {
   }
 
   return (
-    <main className="flex min-h-screen items-center justify-center bg-muted/40 px-4">
+    <main className="flex min-h-screen items-center justify-center bg-background px-4">
       <div className="flex w-full max-w-sm flex-col gap-6">
         <div className="flex flex-col items-center gap-2 text-center">
-          <div className="flex size-12 items-center justify-center rounded-xl bg-primary text-primary-foreground">
-            <CircleDot className="size-6" />
+          <div className="flex size-12 items-center justify-center rounded-xl bg-[var(--ceat-blue)] text-white shadow-md ring-1 ring-white/20">
+            <CircleDot className="size-6 text-[var(--ceat-orange)]" />
           </div>
           <div>
-            <h1 className="text-lg font-semibold">CEAT SLR Simulator</h1>
+            <h1 className="text-lg font-bold text-foreground">CEAT SLR Simulator</h1>
             <p className="text-sm text-muted-foreground">AI-Driven Static Loaded Radius Prediction</p>
           </div>
         </div>

@@ -56,18 +56,18 @@ export function AppSidebar({ role }: { role: UserRole }) {
 
   return (
     <Sidebar collapsible="icon">
-      <SidebarHeader className="gap-0 border-b px-3 py-3">
+      <SidebarHeader className="gap-0 border-b border-sidebar-border px-3 py-3">
         <div className="flex items-center gap-2 px-1">
-          <div className="flex size-8 shrink-0 items-center justify-center rounded-md bg-primary text-primary-foreground">
-            <CircleDot className="size-4.5" />
+          <div className="flex size-8 shrink-0 items-center justify-center rounded-md bg-[var(--ceat-blue)] text-white shadow-sm ring-1 ring-white/20">
+            <CircleDot className="size-4.5 text-[var(--ceat-orange)]" />
           </div>
           <div className="flex min-w-0 flex-col group-data-[collapsible=icon]:hidden">
-            <span className="truncate text-sm font-semibold leading-tight">CEAT SLR Simulator</span>
+            <span className="truncate text-sm font-bold leading-tight text-sidebar-foreground">CEAT SLR Simulator</span>
             <span className="truncate text-[11px] leading-tight text-muted-foreground">AI-Driven SLR Prediction</span>
           </div>
         </div>
         {ROLE_LABEL[role] && (
-          <Badge variant="secondary" className="mt-2 w-fit group-data-[collapsible=icon]:hidden">
+          <Badge variant="outline" className="mt-2 w-fit border-accent/40 bg-accent/10 text-accent font-medium group-data-[collapsible=icon]:hidden">
             {ROLE_LABEL[role]}
           </Badge>
         )}
